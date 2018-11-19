@@ -1,0 +1,11 @@
+## Hard
+
+* https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-make-two-strings-equal/
+
+## Medium
+
+* https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+
+## Easy
+
+* https://www.geeksforgeeks.org/find-if-array-has-an-element-whose-value-is-half-of-array-sum/

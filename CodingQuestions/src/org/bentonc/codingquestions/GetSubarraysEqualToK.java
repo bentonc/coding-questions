@@ -19,7 +19,6 @@ public class GetSubarraysEqualToK {
             int currentSum = 0;
 
             for (int j = i; j < list.size(); ++j) {
-
                 currentSum += list.get(j);
                 System.out.format("i:%d,j:%d,currentSum:%d\n", i, j, currentSum);
 
