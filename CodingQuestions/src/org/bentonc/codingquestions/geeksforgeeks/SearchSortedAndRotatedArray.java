@@ -1,9 +1,23 @@
-package org.bentonc.codingquestions;
+package org.bentonc.codingquestions.geeksforgeeks;
 
 import java.util.List;
 
+/**
+ * https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+ *
+ * Search an element in a sorted and rotated array.
+ *
+ * An element in a sorted array can be found in O(log n) time via binary search. But suppose we rotate an ascending
+ * order sorted array at some pivot unknown to you beforehand. So for instance, 1 2 3 4 5 might become 3 4 5 1 2.
+ * Devise a way to find an element in the rotated array in O(log n) time.
+ *
+ * Rephrased for interview by Charles Benton: Given an array that has been sorted and then rotated at some given
+ * element, implement an approach to finding an element in that array.
+ *
+ * Ex: [ 6, 7, 8, 9, 10, 1, 2, 3, 4, 5 ]
+ */
 public class SearchSortedAndRotatedArray {
-    static int findPivot(final List<Integer> array, final int start, final int end)
+    public static int findPivot(final List<Integer> array, final int start, final int end)
     {
         // Base cases.
         if (end < start) {
@@ -32,7 +46,7 @@ public class SearchSortedAndRotatedArray {
         return findPivot(array, pivot + 1, end);
     }
 
-    static int binarySearch(final List<Integer> array, final int start, final int end, final int target)
+    public static int binarySearch(final List<Integer> array, final int start, final int end, final int target)
     {
         if (end < start)
             return -1;
@@ -51,7 +65,7 @@ public class SearchSortedAndRotatedArray {
         return binarySearch(array, start, (index - 1), target);
     }
 
-    static int pivotedBinarySearch(final List<Integer> array, final int n, final int target)
+    public static int pivotedBinarySearch(final List<Integer> array, final int n, final int target)
     {
         int pivot = findPivot(array, 0, n - 1);
 

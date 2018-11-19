@@ -1,11 +1,10 @@
 package org.bentonc.codingquestions;
 
+import org.bentonc.codingquestions.geeksforgeeks.SearchSortedAndRotatedArray;
+
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * http://collabedit.com/4kgm3
- */
 public class Main {
     public static void main(String[] args) {
 //        {
@@ -84,7 +83,8 @@ public class Main {
             System.out.println("result: " + result1);
 
             // Let us search 3 in below array
-            List<Integer> array2 = Arrays.asList(5, 6, 7, 8, 9, 10, 1, 2, 3);
+            // List<Integer> array2 = Arrays.asList(5, 6, 7, 8, 9, 10, 1, 2, 3);
+            List<Integer> array2 = Arrays.asList(6, 7, 8, 9, 10, 1, 2, 3, 4, 5);
 
             int result2 = SearchSortedAndRotatedArray.pivotedBinarySearch(array2, array2.size(), 2);
             System.out.println("Index of the element is: " + result2);

@@ -1,4 +1,4 @@
-package org.bentonc.codingquestions;
+package org.bentonc.codingquestions.geeksforgeeks;
 
 /**
  * https://www.geeksforgeeks.org/rearrange-array-alternating-positive-negative-items-o1-extra-space/
@@ -23,7 +23,7 @@ public class AlternatePositiveAndNegativeNumbers {
         arr[start] = tmp;
     }
 
-    void rearrange(int arr[], int n) {
+    public void rearrange(int arr[], int n) {
         int outofplace = -1;
 
         for (int index = 0; index < n; index++) {
@@ -66,7 +66,7 @@ public class AlternatePositiveAndNegativeNumbers {
     }
 
     // A utility function to print an array 'arr[]' of size 'n'.
-    void printArray(int arr[], int n) {
+    public void printArray(int arr[], int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }

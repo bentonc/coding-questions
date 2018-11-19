@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e3a527a-54d3-4d8f-b23d-9700bdd81d3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/SearchSortedAndRotatedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/more-potential-questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/GetSubarraysEqualToK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/GetSubarraysEqualToK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/AlternatePositiveAndNegativeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/AlternatePositiveAndNegativeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/GetExpressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/GetExpressions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/GetSubarraysEqualToK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/GetSubarraysEqualToK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/SearchSortedAndRotatedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SearchSortedAndRotatedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bentonc/codingquestions/SmallestNumberK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SmallestNumberK.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,25 +64,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="636" />
+          <entry key="java" value="1017" />
           <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="636" />
+          <entry key="JAVA" value="1017" />
           <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="java" value="9" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -90,20 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/more-potential-questions.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="88" column="98" selection-start-line="88" selection-start-column="98" selection-end-line="88" selection-end-column="98" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +102,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/SearchSortedAndRotatedArray.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/AlternatePositiveAndNegativeNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            <state relative-caret-position="813">
+              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/GetSubarraysEqualToK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SmallestNumberK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/GetExpressions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SearchSortedAndRotatedArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -157,14 +187,17 @@
         <option value="$PROJECT_DIR$/src/org/bentonc/codingquestions/GetSubarraysEqualToK.java" />
         <option value="$PROJECT_DIR$/src/org/bentonc/codingquestions/more-potential-questions.txt" />
         <option value="$PROJECT_DIR$/src/org/bentonc/codingquestions/SearchSortedAndRotatedArray.java" />
+        <option value="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SearchSortedAndRotatedArray.java" />
+        <option value="$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/AlternatePositiveAndNegativeNumbers.java" />
         <option value="$PROJECT_DIR$/src/org/bentonc/codingquestions/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
-    <option name="width" value="1232" />
-    <option name="height" value="777" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1223" />
+    <option name="y" value="130" />
+    <option name="width" value="1767" />
+    <option name="height" value="1112" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -191,6 +224,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="codingquestions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CodingQuestions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingQuestions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="codingquestions" type="462c0819:PsiDirectoryNode" />
+              <item name="geeksforgeeks" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -201,11 +241,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/bentoc/workplace/CodingQuestions/src/com/amazon/bentoc/GetSubarraysEqualToKUtil.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542604596819" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542665724151" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.bentonc.codingquestions.geeksforgeeks" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../" />
       <recent name="$PROJECT_DIR$/../coding-questions" />
@@ -224,25 +267,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.bentonc.codingquestions.Main" />
-      <module name="CodingQuestions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.bentonc.codingquestions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.amazon.bentoc.Main" />
       <module name="CodingQuestions" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bentonc.codingquestions.Main" />
+      <module name="CodingQuestions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bentonc.codingquestions.geeksforgeeks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,10 +315,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1232" height="777" extended-state="1" />
+    <frame x="1036" y="130" width="1767" height="1112" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30336136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22724637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -284,7 +327,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286432" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49956408" visible="true" weight="0.29489052" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49956408" visible="true" weight="0.10294118" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993232" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,27 +373,6 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/zip/ZipFile.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/security/AccessController.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/URLClassPath.class" />
-    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/SmallestNumberK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/GetExpressions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/AlternatePositiveAndNegativeNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="100" selection-start-line="3" selection-start-column="100" selection-end-line="3" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/more-potential-questions.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -358,9 +380,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/GetSubarraysEqualToK.java">
+    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/AlternatePositiveAndNegativeNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="813">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/GetExpressions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/GetSubarraysEqualToK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -368,20 +404,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SearchSortedAndRotatedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="88" column="98" selection-start-line="88" selection-start-column="98" selection-end-line="88" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="463">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/SearchSortedAndRotatedArray.java">
+    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/geeksforgeeks/SmallestNumberK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        <state relative-caret-position="405">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bentonc/codingquestions/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

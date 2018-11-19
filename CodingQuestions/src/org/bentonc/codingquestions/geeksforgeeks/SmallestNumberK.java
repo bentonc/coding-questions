@@ -1,4 +1,4 @@
-package org.bentonc.codingquestions;
+package org.bentonc.codingquestions.geeksforgeeks;
 
 import java.util.Stack;
 
