@@ -43,4 +43,13 @@ public class SmallestNumberK {
 
         return k;
     }
+
+    public static void run() {
+        System.out.println("SmallestNumberK.calc(...).");
+
+        int result = calc(100);
+
+        // result:455
+        System.out.format("result:%d\n\n", result);
+    }
 }

@@ -1,5 +1,6 @@
 package org.bentonc.codingquestions.geeksforgeeks;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -65,5 +66,31 @@ public class GetSubarraysEqualToK {
         }
 
         return result;
+    }
+
+    public static void run() {
+        {
+            System.out.println("GetSubarraysEqualToK.efficient(...).");
+
+            List<Integer> array = Arrays.asList(10, 2, -2, -20, 10);
+            int k = -10;
+
+            int result = efficient(array, k);
+
+            // result:3
+            System.out.format("result:%d\n\n", result);
+        }
+
+        {
+            System.out.println("GetSubarraysEqualToK.bruteForce(...).");
+
+            List<Integer> array = Arrays.asList(10, 2, -2, -20, 10);
+            int k = -10;
+
+            int result = bruteForce(array, k);
+
+            // result:3
+            System.out.format("result:%d\n\n", result);
+        }
     }
 }

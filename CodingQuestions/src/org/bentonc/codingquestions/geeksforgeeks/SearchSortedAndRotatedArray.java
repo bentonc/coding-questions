@@ -1,5 +1,6 @@
 package org.bentonc.codingquestions.geeksforgeeks;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -84,5 +85,19 @@ public class SearchSortedAndRotatedArray {
         }
 
         return binarySearch(array, pivot+1, n - 1, target);
+    }
+
+    public static void run() {
+        List<Integer> array1 = Arrays.asList(3, 4, 5, 6, 1, 2);
+
+        int result1 = findPivot(array1, 0, array1.size() - 1);
+        System.out.println("result: " + result1);
+
+        // Let us search 3 in below array
+        // List<Integer> array2 = Arrays.asList(5, 6, 7, 8, 9, 10, 1, 2, 3);
+        List<Integer> array2 = Arrays.asList(6, 7, 8, 9, 10, 1, 2, 3, 4, 5);
+
+        int result2 = pivotedBinarySearch(array2, array2.size(), 2);
+        System.out.println("Index of the element is: " + result2);
     }
 }
