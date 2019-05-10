@@ -25,6 +25,17 @@
 
 * https://www.geeksforgeeks.org/find-if-array-has-an-element-whose-value-is-half-of-array-sum/
 
+## Phong
+
+* https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+* https://leetcode.com/problems/lru-cache/description/
+* https://leetcode.com/problems/pascals-triangle/description/
+* https://leetcode.com/problems/word-break/description/
+* https://leetcode.com/problems/word-search-ii/description/
+* https://leetcode.com/problems/group-anagrams/description/
+* https://leetcode.com/problems/task-scheduler/description/
+* https://leetcode.com/problems/sort-colors/description/
+
 ## Question Banks
 
 * https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
