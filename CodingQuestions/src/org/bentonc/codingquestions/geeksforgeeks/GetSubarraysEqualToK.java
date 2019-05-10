@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * Number of sub-arrays that sum to exactly k.
  *
- * Given an unsorted array of integers, find number of subarrays having sum exactly equal to a given number k.
+ * Given an unsorted array of integers, find the number of subarrays with a sum exactly equal to a given number k.
  * */
 public class GetSubarraysEqualToK {
     public static int bruteForce(List<Integer> list, int k) {
