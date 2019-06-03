@@ -20,20 +20,20 @@ public class SortByFrequency {
         private int value;
         private int count;
 
-        public Element(int value, int count) {
+        Element(int value, int count) {
             this.value = value;
             this.count = count;
         }
 
-        public int getValue() {
+        int getValue() {
             return value;
         }
 
-        public int getCount() {
+        int getCount() {
             return count;
         }
 
-        public void setCount(int count) {
+        void setCount(int count) {
             this.count = count;
         }
     }
@@ -43,27 +43,27 @@ public class SortByFrequency {
         private Node left;
         private Node right;
 
-        public Node(Element element) {
+        Node(Element element) {
             this.element = element;
         }
 
-        public Element getElement() {
+        Element getElement() {
             return element;
         }
 
-        public Node getLeft() {
+        Node getLeft() {
             return left;
         }
 
-        public Node getRight() {
+        Node getRight() {
             return right;
         }
 
-        public void setLeft(Node left) {
+        void setLeft(Node left) {
             this.left = left;
         }
 
-        public void setRight(Node right) {
+        void setRight(Node right) {
             this.right = right;
         }
     }
@@ -101,7 +101,7 @@ public class SortByFrequency {
             }
         }
 
-        System.out.println("result: " + result);
+        // System.out.println("result: " + result);
     }
 
     void byMap(List<Integer> integers) {
@@ -127,7 +127,7 @@ public class SortByFrequency {
             }
         }
 
-        System.out.println("result: " + result);
+        // System.out.println("result: " + result);
     }
 
     private Node insert(Node root, int value) {
@@ -156,7 +156,7 @@ public class SortByFrequency {
         store(root.getRight(), list);
     }
 
-    void byBST(List<Integer> integers) {
+    void byBst(List<Integer> integers) {
         Node root = null;
 
         for (int i = 0; i < integers.size(); i++) {
@@ -177,26 +177,6 @@ public class SortByFrequency {
             }
         }
 
-        System.out.println("result: " + result);
-    }
-
-    public void run() {
-        {
-            List<Integer> integers = Arrays.asList(5, 2, 2, 8, 5, 6, 8, 8);
-
-            bySorting(integers);
-        }
-
-        {
-            List<Integer> integers = Arrays.asList(5, 2, 2, 8, 5, 6, 8, 8);
-
-            byMap(integers);
-        }
-
-        {
-            List<Integer> integers = Arrays.asList(5, 2, 2, 8, 5, 6, 8, 8);
-
-            byBST(integers);
-        }
+        // System.out.println("result: " + result);
     }
 }

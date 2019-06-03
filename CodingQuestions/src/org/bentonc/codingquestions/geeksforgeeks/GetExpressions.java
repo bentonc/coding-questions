@@ -89,22 +89,4 @@ public class GetExpressions {
             }
         }
     }
-
-    public static void run() {
-        {
-            List<String> result = new ArrayList<>();
-            recursive(6, "123", 0, "", 0, 0, result);
-
-            // result:[1+2+3, 1*2*3]
-            System.out.println("result:" + result);
-        }
-
-        {
-            List<String> result = new ArrayList<>();
-            recursive(7, "125", 0, "", 0, 0, result);
-
-            // result:[1*2+5, 12-5]
-            System.out.println("result:" + result);
-        }
-    }
 }

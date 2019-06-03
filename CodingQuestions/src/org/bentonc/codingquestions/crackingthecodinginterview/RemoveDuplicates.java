@@ -1,7 +1,7 @@
 package org.bentonc.codingquestions.crackingthecodinginterview;
 
 public class RemoveDuplicates {
-    public static String removeDuplicates(String str) {
+    public String removeDuplicates(String str) {
         char[] cstr = str.toCharArray();
 
         if (cstr == null) return new String();
@@ -28,10 +28,5 @@ public class RemoveDuplicates {
         cstr[tail] = 0;
 
         return new String(cstr, 0, tail);
-    }
-
-    public static void run() {
-        String str = "abbbbcadabaefdegaf";
-        System.out.println(removeDuplicates(str));
     }
 }

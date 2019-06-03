@@ -20,6 +20,10 @@
 * https://www.geeksforgeeks.org/sort-elements-by-frequency/
 * https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/
 * https://leetcode.com/problems/letter-combinations-of-a-phone-number/solution/
+* https://www.geeksforgeeks.org/check-if-a-word-exists-in-a-grid-or-not/
+* https://www.geeksforgeeks.org/find-all-occurrences-of-the-word-in-a-matrix/
+* https://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/
+* https://www.geeksforgeeks.org/submatrix-sum-queries/
 
 ## Easy
 

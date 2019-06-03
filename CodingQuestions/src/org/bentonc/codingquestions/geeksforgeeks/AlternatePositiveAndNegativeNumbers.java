@@ -13,7 +13,7 @@ package org.bentonc.codingquestions.geeksforgeeks;
 public class AlternatePositiveAndNegativeNumbers {
 
     // Utility function to right rotate all elements between [outofplace, cur].
-    public static void rotate(int arr[], int n, int start, int end) {
+    private void rotate(int arr[], int n, int start, int end) {
         int tmp = arr[end];
 
         for (int i = end; i > start; i--) {
@@ -23,7 +23,7 @@ public class AlternatePositiveAndNegativeNumbers {
         arr[start] = tmp;
     }
 
-    public static void rearrange(int arr[], int n) {
+    public void rearrange(int arr[], int n) {
         int outofplace = -1;
 
         for (int index = 0; index < n; index++) {
@@ -66,28 +66,11 @@ public class AlternatePositiveAndNegativeNumbers {
     }
 
     // A utility function to print an array 'arr[]' of size 'n'.
-    public static void printArray(int arr[], int n) {
+    public void printArray(int arr[], int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }
 
         System.out.println();
-    }
-
-    public static void run() {
-        //int arr[n] = {-5, 3, 4, 5, -6, -2, 8, 9, -1, -4};
-        //int arr[] = {-5, -3, -4, -5, -6, 2 , 8, 9, 1 , 4};
-        //int arr[] = {5, 3, 4, 2, 1, -2 , -8, -9, -1 , -4};
-        //int arr[] = {-5, 3, -4, -7, -1, -2 , -8, -9, 1 , -4};
-        int arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8};
-        int n = arr.length;
-
-        System.out.println("Given array is: ");
-        printArray(arr, n);
-
-        rearrange(arr, n);
-
-        System.out.println("Rearranged array is: ");
-        printArray(arr, n);
     }
 }

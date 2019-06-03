@@ -15,7 +15,7 @@ import java.util.List;
 public class GetFirstNonRepeatingCharacter {
     static final int NO_OF_CHARS = 256;
 
-    class InefficientSolution {
+    public class BruteForceSolution {
         private int characterCounts[] = new int[NO_OF_CHARS];
 
         // Calculate count of characters in the passed string.
@@ -50,18 +50,18 @@ public class GetFirstNonRepeatingCharacter {
         int index;
 
         // Constructor for first occurrence.
-        public CountIndex(int index) {
+        CountIndex(int index) {
             this.count = 1;
             this.index = index;
         }
 
         // Method for updating count.
-        public void increment() {
+        void increment() {
             this.count++;
         }
     }
 
-    class EfficientSolution {
+    public class EfficientSolution {
         private HashMap<Character, CountIndex> countIndexByCharacter = new HashMap<>(NO_OF_CHARS);
 
         // Calculate count of characters in the passed string.
@@ -98,15 +98,5 @@ public class GetFirstNonRepeatingCharacter {
 
             return result;
         }
-    }
-
-    public void run() {
-        String str = "geeksforgeeks";
-        int index = new EfficientSolution().firstNonRepeating(str);
-
-        System.out.println(index == -1 ?
-                String.format("Either all characters are repeating or string is empty") :
-                String.format("First non-repeating character in '%s' is '%s'.", str, str.charAt(index))
-        );
     }
 }

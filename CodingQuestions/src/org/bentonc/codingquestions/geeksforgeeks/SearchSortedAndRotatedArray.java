@@ -18,8 +18,8 @@ import java.util.List;
  * Ex: [ 6, 7, 8, 9, 10, 1, 2, 3, 4, 5 ]
  */
 public class SearchSortedAndRotatedArray {
-    public static int findPivot(final List<Integer> array, final int start, final int end)
-    {
+
+    private int findPivot(final List<Integer> array, final int start, final int end) {
         // Base cases.
         if (end < start) {
             return -1;
@@ -47,8 +47,7 @@ public class SearchSortedAndRotatedArray {
         return findPivot(array, pivot + 1, end);
     }
 
-    public static int binarySearch(final List<Integer> array, final int start, final int end, final int target)
-    {
+    private int binarySearch(final List<Integer> array, final int start, final int end, final int target) {
         if (end < start)
             return -1;
 
@@ -66,8 +65,7 @@ public class SearchSortedAndRotatedArray {
         return binarySearch(array, start, (index - 1), target);
     }
 
-    public static int pivotedBinarySearch(final List<Integer> array, final int n, final int target)
-    {
+    public int pivotedBinarySearch(final List<Integer> array, final int n, final int target) {
         int pivot = findPivot(array, 0, n - 1);
 
         // If we didn't find a pivot, then  array is not rotated at all.
@@ -85,19 +83,5 @@ public class SearchSortedAndRotatedArray {
         }
 
         return binarySearch(array, pivot+1, n - 1, target);
-    }
-
-    public static void run() {
-        List<Integer> array1 = Arrays.asList(3, 4, 5, 6, 1, 2);
-
-        int result1 = findPivot(array1, 0, array1.size() - 1);
-        System.out.println("result: " + result1);
-
-        // Let us search 3 in below array
-        // List<Integer> array2 = Arrays.asList(5, 6, 7, 8, 9, 10, 1, 2, 3);
-        List<Integer> array2 = Arrays.asList(6, 7, 8, 9, 10, 1, 2, 3, 4, 5);
-
-        int result2 = pivotedBinarySearch(array2, array2.size(), 2);
-        System.out.println("Index of the element is: " + result2);
     }
 }

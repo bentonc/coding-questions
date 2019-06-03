@@ -11,7 +11,8 @@ import java.util.Stack;
  * equal to n. If no such number k can be formed then print “-1”.
  */
 public class SmallestNumberK {
-    public static int calc(int n) {
+
+    public int calculate(int n) {
         if ((n >= 0) && (n <= 9)) {
             return n;
         }
@@ -25,7 +26,7 @@ public class SmallestNumberK {
                 digits.push(i);
                 n = n / i;
 
-                System.out.println(String.format("n:%d, i:%d, digits:%s", n, i, digits));
+                // System.out.println(String.format("n:%d, i:%d, digits:%s", n, i, digits));
             }
         }
 
@@ -42,14 +43,5 @@ public class SmallestNumberK {
         }
 
         return k;
-    }
-
-    public static void run() {
-        System.out.println("SmallestNumberK.calc(...).");
-
-        int result = calc(100);
-
-        // result:455
-        System.out.format("result:%d\n\n", result);
     }
 }
