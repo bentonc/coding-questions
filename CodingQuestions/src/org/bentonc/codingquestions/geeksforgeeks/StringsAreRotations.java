@@ -9,6 +9,7 @@ package org.bentonc.codingquestions.geeksforgeeks;
  * s2 = CDAB, return true, given s1 = ABCD, and s2 = ACBD , return false)
  */
 public class StringsAreRotations {
+
     // Function checks if passed strings (str1 and str2) are rotations of each other.
     static boolean areRotations(String str1, String str2)
     {

@@ -2,17 +2,6 @@ package org.bentonc.codingquestions.crackingthecodinginterview;
 
 public class RotateMatrix {
 
-    public void printMatrix(int[][] matrix) {
-        for (int a = 0; a < matrix.length; ++a) {
-            for (int b = 0; b < matrix[0].length; ++b) {
-                System.out.format("%3d", matrix[a][b]);
-            }
-            System.out.println();
-        }
-
-        System.out.println();
-    }
-
     public void rotate(int[][] matrix, int n) {
         for (int layer = 0; layer < n / 2; ++layer) {
             int first = layer;

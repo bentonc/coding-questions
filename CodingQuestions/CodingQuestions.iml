@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="groovy-2.5.7" level="application" />
     <orderEntry type="library" name="org.junit.vintage:junit-vintage-engine:5.4.2" level="project" />
+    <orderEntry type="library" name="groovy-2.5.7" level="application" />
   </component>
 </module>

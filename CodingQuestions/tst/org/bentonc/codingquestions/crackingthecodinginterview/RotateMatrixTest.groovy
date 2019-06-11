@@ -8,6 +8,17 @@ class RotateMatrixTest extends GroovyTestCase {
         instance = new RotateMatrix()
     }
 
+    void printMatrix(int[][] matrix) {
+        for (int a = 0; a < matrix.length; ++a) {
+            for (int b = 0; b < matrix[0].length; ++b) {
+                print(String.format("%3d", matrix[a][b]))
+            }
+            println()
+        }
+
+        println();
+    }
+
     void testRotate() {
         def matrix = [
                 [  1,  2,  3,  4,  5 ] as int[],
@@ -17,9 +28,9 @@ class RotateMatrixTest extends GroovyTestCase {
                 [ 21, 22, 23, 24, 25 ] as int[]
         ] as int [][]
 
-        // instance.printMatrix(matrix)
+        // printMatrix(matrix)
         instance.rotate(matrix, matrix.length)
-        //instance.printMatrix(matrix)
+        // printMatrix(matrix)
 
         def expected = [
                 [ 21, 16, 11,  6,  1 ] as int[],

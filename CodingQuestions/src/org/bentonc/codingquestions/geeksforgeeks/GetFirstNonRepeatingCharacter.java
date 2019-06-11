@@ -18,18 +18,16 @@ public class GetFirstNonRepeatingCharacter {
     public class BruteForceSolution {
         private int characterCounts[] = new int[NO_OF_CHARS];
 
-        // Calculate count of characters in the passed string.
-        private void calculateCharacterCounts(String str)
-        {
+        // Calculate count of characters in the string provided.
+        private void calculateCharacterCounts(String str) {
             for (int i = 0; i < str.length(); i++) {
                 characterCounts[str.charAt(i)]++;
             }
         }
 
-        // The method returns index of first non-repeating character in a string. If all characters are repeating then
-        // returns -1.
-        public int firstNonRepeating(String str)
-        {
+        // The method returns the index of the first non-repeating character in a string. If all characters are
+        // repeating then it will return -1.
+        public int firstNonRepeating(String str) {
             calculateCharacterCounts(str);
             int index = -1, i;
 
@@ -44,8 +42,7 @@ public class GetFirstNonRepeatingCharacter {
         }
     }
 
-    class CountIndex
-    {
+    class CountIndex {
         int count;
         int index;
 
@@ -65,8 +62,7 @@ public class GetFirstNonRepeatingCharacter {
         private HashMap<Character, CountIndex> countIndexByCharacter = new HashMap<>(NO_OF_CHARS);
 
         // Calculate count of characters in the passed string.
-        private void calculateCharacterCounts(String str)
-        {
+        private void calculateCharacterCounts(String str) {
             for (int i = 0; i < str.length();  i++) {
                 // If character already occurred.
                 if(countIndexByCharacter.containsKey(str.charAt(i))) {
@@ -80,10 +76,9 @@ public class GetFirstNonRepeatingCharacter {
             }
         }
 
-        // The method returns index of first non-repeating character in a string. If all characters are repeating then
-        // returns -1.
-        public int firstNonRepeating(String str)
-        {
+        // The method returns the index of the first non-repeating character in a string. If all characters are
+        // repeating then it will return -1.
+        public int firstNonRepeating(String str) {
             calculateCharacterCounts(str);
             int result = Integer.MAX_VALUE;
 
