@@ -2,10 +2,11 @@ package org.bentonc.codingquestions.geeksforgeeks
 
 class AlternatePositiveAndNegativeNumbersTest extends GroovyTestCase {
 
-    AlternatePositiveAndNegativeNumbers instance
+    AlternatePositiveAndNegativeNumbers testClass
 
     void setUp() {
-        instance = new AlternatePositiveAndNegativeNumbers()
+        super.setUp()
+        testClass = new AlternatePositiveAndNegativeNumbers()
     }
 
     // A utility function to print an array 'arr[]' of size 'n'.
@@ -24,7 +25,7 @@ class AlternatePositiveAndNegativeNumbersTest extends GroovyTestCase {
         // println('Given array is: ')
         // printArray(arr, n)
 
-        instance.rearrange(arr, n)
+        testClass.rearrange(arr, n)
 
         // println('Rearranged array is: ')
         // printArray(arr, n)

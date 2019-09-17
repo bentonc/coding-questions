@@ -3,10 +3,10 @@ package org.bentonc.codingquestions.geeksforgeeks
 class GetFirstNonRepeatingCharacterTest extends GroovyTestCase {
 
     void testBruteForceSolution() {
-        def instance = new GetFirstNonRepeatingCharacter.BruteForceSolution()
+        def testClass = new GetFirstNonRepeatingCharacter.BruteForceSolution()
 
         def str = 'geeksforgeeks';
-        def index = instance.firstNonRepeating(str)
+        def index = testClass.firstNonRepeating(str)
 
 //        println(index == -1 ?
 //                String.format('Either all characters are repeating or string is empty') :
@@ -17,10 +17,10 @@ class GetFirstNonRepeatingCharacterTest extends GroovyTestCase {
     }
 
     void testEfficientSolution() {
-        def instance = new GetFirstNonRepeatingCharacter.EfficientSolution()
+        def testClass = new GetFirstNonRepeatingCharacter.EfficientSolution()
 
         def str = 'geeksforgeeks'
-        def index = instance.firstNonRepeating(str)
+        def index = testClass.firstNonRepeating(str)
 
 //        println(index == -1 ?
 //                String.format('Either all characters are repeating or string is empty') :

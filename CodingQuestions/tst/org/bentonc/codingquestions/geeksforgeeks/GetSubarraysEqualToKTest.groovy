@@ -2,17 +2,18 @@ package org.bentonc.codingquestions.geeksforgeeks
 
 class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
 
-    GetSubarraysEqualToK instance
+    GetSubarraysEqualToK testClass
 
     void setUp() {
-       instance = new GetSubarraysEqualToK()
+        super.setUp()
+        testClass = new GetSubarraysEqualToK()
     }
 
     void testBruteForce() {
         def array = [ 10, 2, -2, -20, 10 ]
         def k = -10
 
-        def result = instance.bruteForce(array, k)
+        def result = testClass.bruteForce(array, k)
 
         // result:3
         // println('result: ' + result)
@@ -25,7 +26,7 @@ class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
         def array = [ 10, 2, -2, -20, 10 ]
         def k = -10
 
-        def result = instance.efficient(array, k)
+        def result = testClass.efficient(array, k)
 
         // result:3
         // println('result: ' + result)

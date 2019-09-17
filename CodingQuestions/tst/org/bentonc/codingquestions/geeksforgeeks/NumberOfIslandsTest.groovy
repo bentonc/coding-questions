@@ -2,10 +2,11 @@ package org.bentonc.codingquestions.geeksforgeeks
 
 class NumberOfIslandsTest extends GroovyTestCase {
 
-    NumberOfIslands instance
+    NumberOfIslands testClass
 
     void setUp() {
-        instance = new NumberOfIslands()
+        super.setUp()
+        testClass = new NumberOfIslands()
     }
 
     void testCountIslands() {
@@ -17,8 +18,8 @@ class NumberOfIslandsTest extends GroovyTestCase {
                 [ 1, 0, 1, 0, 1 ] as int[]
         ] as int[][]
 
-        // println('Number of islands is: ' + instance.countIslands(matrix))
+        // println('Number of islands is: ' + testClass.countIslands(matrix))
 
-        assertEquals(5, instance.countIslands(matrix))
+        assertEquals(5, testClass.countIslands(matrix))
     }
 }

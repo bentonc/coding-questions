@@ -2,27 +2,28 @@ package org.bentonc.codingquestions.geeksforgeeks
 
 class SortByFrequencyTest extends GroovyTestCase {
 
-    SortByFrequency instance
+    SortByFrequency testClass
 
     void setUp() {
-        instance = new SortByFrequency()
+        super.setUp()
+        testClass = new SortByFrequency()
     }
 
     void testBySorting() {
         def integers = [ 5, 2, 2, 8, 5, 6, 8, 8 ]
 
-        instance.bySorting(integers)
+        testClass.bySorting(integers)
     }
 
     void testByMap() {
         def integers = [ 5, 2, 2, 8, 5, 6, 8, 8 ]
 
-        instance.byMap(integers);
+        testClass.byMap(integers);
     }
 
     void testByBst() {
         def integers = [ 5, 2, 2, 8, 5, 6, 8, 8 ]
 
-        instance.byBst(integers);
+        testClass.byBst(integers);
     }
 }

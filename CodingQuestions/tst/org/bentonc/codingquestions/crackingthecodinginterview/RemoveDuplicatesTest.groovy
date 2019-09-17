@@ -2,15 +2,16 @@ package org.bentonc.codingquestions.crackingthecodinginterview
 
 class RemoveDuplicatesTest extends GroovyTestCase {
 
-    RemoveDuplicates instance
+    RemoveDuplicates testClass
 
     void setUp() {
-        instance = new RemoveDuplicates()
+        super.setUp()
+        testClass = new RemoveDuplicates()
     }
 
     void testRemoveDuplicates() {
         def str = 'abbbbcadabaefdegaf'
 
-        assertEquals('abcdefg', instance.removeDuplicates(str))
+        assertEquals('abcdefg', testClass.removeDuplicates(str))
     }
 }

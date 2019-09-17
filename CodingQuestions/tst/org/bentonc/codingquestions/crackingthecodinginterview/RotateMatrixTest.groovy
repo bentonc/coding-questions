@@ -2,10 +2,11 @@ package org.bentonc.codingquestions.crackingthecodinginterview
 
 class RotateMatrixTest extends GroovyTestCase {
 
-    RotateMatrix instance
+    RotateMatrix testClass
 
     void setUp() {
-        instance = new RotateMatrix()
+        super.setUp()
+        testClass = new RotateMatrix()
     }
 
     void printMatrix(int[][] matrix) {
@@ -29,7 +30,7 @@ class RotateMatrixTest extends GroovyTestCase {
         ] as int [][]
 
         // printMatrix(matrix)
-        instance.rotate(matrix, matrix.length)
+        testClass.rotate(matrix, matrix.length)
         // printMatrix(matrix)
 
         def expected = [
