@@ -14,7 +14,6 @@ class EvenOddTest extends GroovyTestCase {
 
         testClass.evenOdd(arr)
 
-        // println('arr: ' + arr)
         assertEquals([10, 2, 8, 4, 6, 7, 5, 9, 3, 1], arr)
     }
 }

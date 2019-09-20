@@ -11,7 +11,6 @@ class RemoveDuplicatesTest extends GroovyTestCase {
 
     void testRemoveDuplicates() {
         def str = 'abbbbcadabaefdegaf'
-
         assertEquals('abcdefg', testClass.removeDuplicates(str))
     }
 }

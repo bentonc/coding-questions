@@ -1,7 +1,12 @@
 package org.bentonc.codingquestions.crackingthecodinginterview
 
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+import org.bentonc.codingquestions.utils.LogUtils
+
 class RotateMatrixTest extends GroovyTestCase {
 
+    Logger logger = LogManager.getLogger(RotateMatrixTest.class)
     RotateMatrix testClass
 
     void setUp() {
@@ -10,14 +15,14 @@ class RotateMatrixTest extends GroovyTestCase {
     }
 
     void printMatrix(int[][] matrix) {
+        LogUtils.logSeparator(logger)
         for (int a = 0; a < matrix.length; ++a) {
+            final StringBuffer sb = new StringBuffer();
             for (int b = 0; b < matrix[0].length; ++b) {
-                print(String.format("%3d", matrix[a][b]))
+                sb.append(String.format("%3d", matrix[a][b]))
             }
-            println()
+            logger.debug(sb.toString())
         }
-
-        println();
     }
 
     void testRotate() {
@@ -29,9 +34,9 @@ class RotateMatrixTest extends GroovyTestCase {
                 [ 21, 22, 23, 24, 25 ] as int[]
         ] as int [][]
 
-        // printMatrix(matrix)
+        printMatrix(matrix)
         testClass.rotate(matrix, matrix.length)
-        // printMatrix(matrix)
+        printMatrix(matrix)
 
         def expected = [
                 [ 21, 16, 11,  6,  1 ] as int[],

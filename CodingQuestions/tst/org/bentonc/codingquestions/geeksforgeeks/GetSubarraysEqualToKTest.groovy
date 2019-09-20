@@ -1,7 +1,11 @@
 package org.bentonc.codingquestions.geeksforgeeks
 
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+
 class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
 
+    Logger logger = LogManager.getLogger(GetSubarraysEqualToKTest.class)
     GetSubarraysEqualToK testClass
 
     void setUp() {
@@ -16,8 +20,7 @@ class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
         def result = testClass.bruteForce(array, k)
 
         // result:3
-        // println('result: ' + result)
-        // println()
+        logger.debug('result: {}', result)
 
         assertEquals(3, result)
     }
@@ -29,8 +32,7 @@ class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
         def result = testClass.efficient(array, k)
 
         // result:3
-        // println('result: ' + result)
-        // println()
+        logger.debug('result: {}', result)
 
         assertEquals(3, result)
     }
