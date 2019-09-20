@@ -1,7 +1,11 @@
 package org.bentonc.codingquestions.geeksforgeeks
 
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+
 class NumberOfIslandsTest extends GroovyTestCase {
 
+    Logger logger = LogManager.getLogger(NumberOfIslandsTest.class)
     NumberOfIslands testClass
 
     void setUp() {
@@ -18,7 +22,7 @@ class NumberOfIslandsTest extends GroovyTestCase {
                 [ 1, 0, 1, 0, 1 ] as int[]
         ] as int[][]
 
-        // println('Number of islands is: ' + testClass.countIslands(matrix))
+        logger.debug('Number of islands is: {}', testClass.countIslands(matrix))
 
         assertEquals(5, testClass.countIslands(matrix))
     }

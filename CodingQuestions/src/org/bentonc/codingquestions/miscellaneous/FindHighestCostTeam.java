@@ -1,6 +1,12 @@
 package org.bentonc.codingquestions.miscellaneous;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.bentonc.codingquestions.geeksforgeeks.GetSubarraysEqualToK;
+
 public class FindHighestCostTeam {
+
+    private final Logger logger = LogManager.getLogger(FindHighestCostTeam.class);
 
     class Node {
         int wage;
@@ -41,7 +47,7 @@ public class FindHighestCostTeam {
             return;
         }
 
-        System.out.println(root.toString());
+        logger.debug(root.toString());
 
         printWages(root.left);
         printWages(root.right);

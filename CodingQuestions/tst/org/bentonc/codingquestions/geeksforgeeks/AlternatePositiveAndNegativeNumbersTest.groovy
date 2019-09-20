@@ -1,7 +1,11 @@
 package org.bentonc.codingquestions.geeksforgeeks
 
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+
 class AlternatePositiveAndNegativeNumbersTest extends GroovyTestCase {
 
+    Logger logger = LogManager.getLogger(AlternatePositiveAndNegativeNumbersTest.class)
     AlternatePositiveAndNegativeNumbers testClass
 
     void setUp() {
@@ -9,26 +13,15 @@ class AlternatePositiveAndNegativeNumbersTest extends GroovyTestCase {
         testClass = new AlternatePositiveAndNegativeNumbers()
     }
 
-    // A utility function to print an array 'arr[]' of size 'n'.
-    void printArray(int[] arr, int n) {
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + ' ')
-        }
-
-        System.out.println();
-    }
-
     void testRearrange() {
         def arr = [ -5, -2, 5, 2, 4, 7, 1, 8, 0, -8 ] as int[]
         def n = arr.length
 
-        // println('Given array is: ')
-        // printArray(arr, n)
+        logger.debug('Given array is: {}', arr)
 
         testClass.rearrange(arr, n)
 
-        // println('Rearranged array is: ')
-        // printArray(arr, n)
+        logger.debug('Rearranged array is: {}', arr)
 
         def expected = [ -5, 5, -2, 2, -8, 4, 7, 1, 8, 0 ] as int[]
         assertEquals(expected, arr)
