@@ -17,6 +17,7 @@ public class PermuteArray {
         for (int i = 0; i < A.size(); i++) {
             // Check if the element at index i has not been moved by checking if perm.get(i) is non-negative.
             int next = i;
+            logger.debug("increment - i: {}, next: {}",  i, next);
             while (perm.get(next) >= 0) {
                 int j = perm.get(next);
                 Collections.swap(A, i, j);
@@ -25,9 +26,9 @@ public class PermuteArray {
                 // move has been performed.
                 perm.set(next, perm.get(next) - perm.size());
 
-                logger.debug("i: {}, j: {}, perm: {}, A: {}", i, j, perm, A);
-
                 next = j;
+
+                logger.debug("swap - i: {}, j: {}, next: {}, perm: {}, A: {}", i, j, next, perm, A);
             }
         }
 
