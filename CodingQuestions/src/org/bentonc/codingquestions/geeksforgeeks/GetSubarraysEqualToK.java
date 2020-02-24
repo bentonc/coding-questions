@@ -13,7 +13,7 @@ import java.util.Map;
  * Number of sub-arrays that sum to exactly k.
  *
  * Given an unsorted array of integers, find the number of subarrays with a sum exactly equal to a given number k.
- * */
+ **/
 public class GetSubarraysEqualToK {
 
     private final Logger logger = LogManager.getLogger(GetSubarraysEqualToK.class);
