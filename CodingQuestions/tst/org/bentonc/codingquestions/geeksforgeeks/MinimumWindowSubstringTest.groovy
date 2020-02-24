@@ -1,12 +1,7 @@
 package org.bentonc.codingquestions.geeksforgeeks
 
 class MinimumWindowSubstringTest extends GroovyTestCase {
-    MinimumWindowSubstring unit
-
-    void setUp() {
-        super.setUp()
-        unit = new MinimumWindowSubstring();
-    }
+    MinimumWindowSubstring unit = new MinimumWindowSubstring();
 
     void testFindSubstring() {
         assertEquals("ACB", unit.findSubstring("ABAACBAB", "ABC"));

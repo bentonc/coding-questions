@@ -6,12 +6,7 @@ import org.apache.logging.log4j.Logger
 class SieveOfEratosthenesTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(SieveOfEratosthenesTest)
-    SieveOfEratosthenes unit
-
-    void setUp() {
-        super.setUp()
-        unit = new SieveOfEratosthenes()
-    }
+    SieveOfEratosthenes unit = new SieveOfEratosthenes()
 
     void testGetPrimes() {
         def expected = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]

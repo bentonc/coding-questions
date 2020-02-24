@@ -6,12 +6,7 @@ import org.apache.logging.log4j.Logger
 class SearchSortedAndRotatedArrayTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(SearchSortedAndRotatedArrayTest.class)
-    SearchSortedAndRotatedArray unit
-
-    void setUp() {
-        super.setUp()
-        unit = new SearchSortedAndRotatedArray()
-    }
+    SearchSortedAndRotatedArray unit = new SearchSortedAndRotatedArray()
 
     void testPivotedBinarySearch() {
         def array = [ 6, 7, 8, 9, 10, 1, 2, 3, 4, 5 ]

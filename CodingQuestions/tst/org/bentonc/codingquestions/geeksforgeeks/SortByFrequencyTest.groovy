@@ -2,12 +2,7 @@ package org.bentonc.codingquestions.geeksforgeeks
 
 class SortByFrequencyTest extends GroovyTestCase {
 
-    SortByFrequency unit
-
-    void setUp() {
-        super.setUp()
-        unit = new SortByFrequency()
-    }
+    SortByFrequency unit = new SortByFrequency()
 
     void testBySorting() {
         def integers = [ 5, 2, 2, 8, 5, 6, 8, 8 ]

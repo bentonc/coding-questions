@@ -6,12 +6,7 @@ import org.apache.logging.log4j.Logger
 class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
 
     Logger logger = LogManager.getLogger(GetSubarraysEqualToKTest.class)
-    GetSubarraysEqualToK unit
-
-    void setUp() {
-        super.setUp()
-        unit = new GetSubarraysEqualToK()
-    }
+    GetSubarraysEqualToK unit = new GetSubarraysEqualToK()
 
     void testBruteForce() {
         def array = [ 10, 2, -2, -20, 10 ]

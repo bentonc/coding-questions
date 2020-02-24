@@ -1,12 +1,7 @@
 package org.bentonc.codingquestions.elementsofprogramminginterviews
 
 class PermuteArrayTest extends GroovyTestCase {
-    PermuteArray unit
-
-    void setUp() {
-        super.setUp()
-        unit = new PermuteArray()
-    }
+    PermuteArray unit = new PermuteArray()
 
     void testApplyPermutation1() {
         testCase1: {

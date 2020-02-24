@@ -7,12 +7,7 @@ import org.bentonc.codingquestions.utils.LogUtils
 class RotateMatrixTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(RotateMatrixTest.class)
-    RotateMatrix unit
-
-    void setUp() {
-        super.setUp()
-        unit = new RotateMatrix()
-    }
+    RotateMatrix unit = new RotateMatrix()
 
     void printMatrix(int[][] matrix) {
         LogUtils.logSeparator(logger)

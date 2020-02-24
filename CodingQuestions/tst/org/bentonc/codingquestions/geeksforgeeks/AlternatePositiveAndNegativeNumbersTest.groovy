@@ -6,12 +6,7 @@ import org.apache.logging.log4j.Logger
 class AlternatePositiveAndNegativeNumbersTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(AlternatePositiveAndNegativeNumbersTest.class)
-    AlternatePositiveAndNegativeNumbers unit
-
-    void setUp() {
-        super.setUp()
-        unit = new AlternatePositiveAndNegativeNumbers()
-    }
+    AlternatePositiveAndNegativeNumbers unit = new AlternatePositiveAndNegativeNumbers()
 
     void testRearrange() {
         def arr = [ -5, -2, 5, 2, 4, 7, 1, 8, 0, -8 ] as int[]

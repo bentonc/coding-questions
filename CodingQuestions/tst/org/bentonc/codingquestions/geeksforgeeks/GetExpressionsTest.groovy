@@ -6,12 +6,7 @@ import org.apache.logging.log4j.Logger
 class GetExpressionsTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(GetExpressionsTest.class)
-    GetExpressions unit
-
-    void setUp() {
-        super.setUp()
-        unit = new GetExpressions()
-    }
+    GetExpressions unit = new GetExpressions()
 
     void testRecursive1() {
         def result = []

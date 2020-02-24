@@ -6,12 +6,7 @@ import org.apache.logging.log4j.Logger
 class NumberOfIslandsTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(NumberOfIslandsTest.class)
-    NumberOfIslands unit
-
-    void setUp() {
-        super.setUp()
-        unit = new NumberOfIslands()
-    }
+    NumberOfIslands unit = new NumberOfIslands()
 
     void testCountIslands() {
         def matrix = [
