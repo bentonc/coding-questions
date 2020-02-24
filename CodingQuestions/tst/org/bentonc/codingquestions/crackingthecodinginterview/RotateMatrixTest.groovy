@@ -7,11 +7,11 @@ import org.bentonc.codingquestions.utils.LogUtils
 class RotateMatrixTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(RotateMatrixTest.class)
-    RotateMatrix testClass
+    RotateMatrix unit
 
     void setUp() {
         super.setUp()
-        testClass = new RotateMatrix()
+        unit = new RotateMatrix()
     }
 
     void printMatrix(int[][] matrix) {
@@ -35,7 +35,7 @@ class RotateMatrixTest extends GroovyTestCase {
         ] as int [][]
 
         printMatrix(matrix)
-        testClass.rotate(matrix, matrix.length)
+        unit.rotate(matrix, matrix.length)
         printMatrix(matrix)
 
         def expected = [

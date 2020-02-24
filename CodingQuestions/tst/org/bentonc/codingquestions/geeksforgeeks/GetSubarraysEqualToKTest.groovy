@@ -6,18 +6,18 @@ import org.apache.logging.log4j.Logger
 class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
 
     Logger logger = LogManager.getLogger(GetSubarraysEqualToKTest.class)
-    GetSubarraysEqualToK testClass
+    GetSubarraysEqualToK unit
 
     void setUp() {
         super.setUp()
-        testClass = new GetSubarraysEqualToK()
+        unit = new GetSubarraysEqualToK()
     }
 
     void testBruteForce() {
         def array = [ 10, 2, -2, -20, 10 ]
         def k = -10
 
-        def result = testClass.bruteForce(array, k)
+        def result = unit.bruteForce(array, k)
 
         // result:3
         logger.debug('result: {}', result)
@@ -29,7 +29,7 @@ class GetSubarraysEqualToKTest extends groovy.util.GroovyTestCase {
         def array = [ 10, 2, -2, -20, 10 ]
         def k = -10
 
-        def result = testClass.efficient(array, k)
+        def result = unit.efficient(array, k)
 
         // result:3
         logger.debug('result: {}', result)

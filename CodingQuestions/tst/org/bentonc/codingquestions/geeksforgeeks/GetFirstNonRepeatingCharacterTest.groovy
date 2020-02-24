@@ -8,10 +8,10 @@ class GetFirstNonRepeatingCharacterTest extends GroovyTestCase {
     Logger logger = LogManager.getLogger(GetFirstNonRepeatingCharacterTest.class)
 
     void testBruteForceSolution() {
-        def testClass = new GetFirstNonRepeatingCharacter.BruteForceSolution()
+        def unit = new GetFirstNonRepeatingCharacter.BruteForceSolution()
 
         def str = 'geeksforgeeks';
-        def index = testClass.firstNonRepeating(str)
+        def index = unit.firstNonRepeating(str)
 
         logger.debug(index == -1 ?
                 String.format('Either all characters are repeating or string is empty') :
@@ -21,10 +21,10 @@ class GetFirstNonRepeatingCharacterTest extends GroovyTestCase {
     }
 
     void testEfficientSolution() {
-        def testClass = new GetFirstNonRepeatingCharacter.EfficientSolution()
+        def unit = new GetFirstNonRepeatingCharacter.EfficientSolution()
 
         def str = 'geeksforgeeks'
-        def index = testClass.firstNonRepeating(str)
+        def index = unit.firstNonRepeating(str)
 
         logger.debug(index == -1 ?
                 String.format('Either all characters are repeating or string is empty') :

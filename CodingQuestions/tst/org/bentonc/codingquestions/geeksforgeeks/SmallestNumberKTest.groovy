@@ -6,15 +6,15 @@ import org.apache.logging.log4j.Logger
 class SmallestNumberKTest extends GroovyTestCase {
 
     Logger logger = LogManager.getLogger(SmallestNumberKTest.class)
-    SmallestNumberK testClass
+    SmallestNumberK unit
 
     void setUp() {
         super.setUp()
-        testClass = new SmallestNumberK()
+        unit = new SmallestNumberK()
     }
 
     void testCalculate() {
-        def result = testClass.calculate(100)
+        def result = unit.calculate(100)
 
         // result:455
         logger.debug('result: {}', result)

@@ -1,14 +1,14 @@
 package org.bentonc.codingquestions.elementsofprogramminginterviews
 
 class GetRandomSubsetTest extends GroovyTestCase {
-    GetRandomSubset testClass
+    GetRandomSubset unit
 
     void setUp() {
         super.setUp()
-        testClass = new GetRandomSubset()
+        unit = new GetRandomSubset()
     }
 
     void testRandomSampling() {
-        def result = testClass.randomSampling(3, [3, 7, 5, 11])
+        def result = unit.randomSampling(3, [3, 7, 5, 11])
     }
 }
