@@ -1,4 +1,4 @@
-package org.bentonc.codingquestions.leetcode
+package org.bentonc.codingquestions.blindcurated.arrays
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger

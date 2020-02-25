@@ -1,4 +1,4 @@
-package org.bentonc.codingquestions.leetcode;
+package org.bentonc.codingquestions.blindcurated.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
