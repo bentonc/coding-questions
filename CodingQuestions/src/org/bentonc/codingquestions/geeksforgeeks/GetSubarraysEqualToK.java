@@ -2,7 +2,6 @@ package org.bentonc.codingquestions.geeksforgeeks;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,6 +59,9 @@ public class GetSubarraysEqualToK {
             }
 
             // Remove any sub-arrays from 0 to i that have a sum of currentSum - k.
+            //
+            // currentSum exceeds given k by currentSum - k. Find number of subarrays having this
+            // sum and exclude those subarrays from currentSum by increasing count by same amount.
             if (previousSum.containsKey(currentSum - k)) {
                 result += previousSum.get(currentSum - k);
                 logger.debug("i: {}, currentSum: {}, result: {}", i, currentSum, result);
