@@ -18,7 +18,7 @@ public class ProductExcludingSelf {
 
     Logger logger = LogManager.getLogger(ProductExcludingSelf.class);
 
-    public List<Integer> efficient(List<Integer> nums) {
+    public List<Integer> efficient1(final List<Integer> nums) {
         List<Integer> result = new ArrayList<>(nums.size());
 
         logger.debug("Forward");
@@ -47,4 +47,35 @@ public class ProductExcludingSelf {
         return result;
     }
 
+    public List<Integer> efficient2(final List<Integer> nums) {
+
+        List<Integer> forward = new ArrayList<>();
+        List<Integer> backward = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
+
+        forward.add(nums.get(0));
+        for (int i = 1; i < nums.size(); i++) {
+            forward.add(forward.get(forward.size() - 1) * nums.get(i));
+
+            logger.debug("forward: {}", forward);
+        }
+
+        backward.add(0, nums.get(nums.size() - 1));
+        for (int i = nums.size() - 2; i >= 0; i--) {
+            backward.add(0, backward.get(0) * nums.get(i));
+
+            logger.debug("backward: {}", backward);
+        }
+
+        for (int i = 0; i < nums.size(); i++) {
+            int left = (i <= 0) ? 1 : forward.get(i - 1);
+            int right = (i >= nums.size() - 1) ? 1 : backward.get(i + 1);
+
+            result.add(left * right);
+
+            logger.debug("result: {}", result);
+        }
+
+        return result;
+    }
 }
