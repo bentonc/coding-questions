@@ -1,4 +1,4 @@
-package org.bentonc.codingquestions.geeksforgeeks;
+package org.bentonc.codingquestions.blindcurated.arrays;
 
 import java.util.List;
 
@@ -98,7 +98,7 @@ public class BuySellStock {
             int min = Integer.MAX_VALUE;
             int max = Integer.MIN_VALUE;
 
-            while (prices.get(i) < min) {
+            while ((i < prices.size()) && (prices.get(i) < min)) {
                 min = prices.get(i++);
             }
 
@@ -106,7 +106,9 @@ public class BuySellStock {
                 max = prices.get(i++);
             }
 
-            profit += (max - min);
+            if ((max - min) > 0) {
+                profit += (max - min);
+            }
         }
 
         return profit;
