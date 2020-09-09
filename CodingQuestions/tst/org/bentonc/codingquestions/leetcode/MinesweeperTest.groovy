@@ -13,8 +13,9 @@ class MinesweeperTest extends GroovyTestCase {
             for (int x = 0; x < board[y].length; x++) {
                 print board[y][x]
             }
-            println ""
+            println ''
         }
+        println ''
     }
 
     void testClick() {
@@ -27,8 +28,28 @@ class MinesweeperTest extends GroovyTestCase {
 
         printBoard(board)
 
-        unit.click(board, 3, 0)
-
+        unit.click(board, 0, 3)
         printBoard(board)
+
+        def expected1 = [
+                ['B', '1', 'E', '1', 'B'] as char[],
+                ['B', '1', 'M', '1', 'B'] as char[],
+                ['B', '1', '1', '1', 'B'] as char[],
+                ['B', 'B', 'B', 'B', 'B'] as char[]
+        ] as char[][]
+
+        assertEquals(expected1, board)
+
+        unit.click(board, 2, 1)
+        printBoard(board)
+
+        def expected2 = [
+                ['B', '1', 'E', '1', 'B'] as char[],
+                ['B', '1', 'X', '1', 'B'] as char[],
+                ['B', '1', '1', '1', 'B'] as char[],
+                ['B', 'B', 'B', 'B', 'B'] as char[]
+        ] as char[][]
+
+        assertEquals(expected2, board)
     }
 }
